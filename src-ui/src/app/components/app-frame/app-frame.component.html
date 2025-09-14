@@ -17,7 +17,7 @@
       @if (customAppTitle?.length) {
         <div class="d-flex flex-column align-items-start custom-title">
           <span class="title">{{customAppTitle}}</span>
-          <span class="byline text-uppercase font-monospace" i18n>by Paperless-ngx</span>
+          <!-- <span class="byline text-uppercase font-monospace" i18n>by Paperless-ngx</span> -->
         </div>
       } @else {
         Paperless-ngx
@@ -53,11 +53,11 @@
         <a ngbDropdownItem class="nav-link d-flex" href="accounts/logout/" (click)="onLogout()">
           <i-bs class="me-2" name="door-open"></i-bs><ng-container i18n>Logout</ng-container>
         </a>
-        <div class="dropdown-divider"></div>
+        <!-- <div class="dropdown-divider"></div>
         <a ngbDropdownItem class="nav-link" target="_blank" rel="noopener noreferrer"
           href="https://docs.paperless-ngx.com">
           <i-bs class="me-2" name="question-circle"></i-bs><ng-container i18n>Documentation</ng-container>
-        </a>
+        </a> -->
       </div>
     </li>
   </ul>
@@ -293,18 +293,18 @@
               </li>
             }
             <li class="nav-item mt-2" tourAnchor="tour.outro">
-              <a class="px-3 py-2 text-muted small d-flex align-items-center flex-wrap text-decoration-none"
+              <!-- <a class="px-3 py-2 text-muted small d-flex align-items-center flex-wrap text-decoration-none"
                 target="_blank" rel="noopener noreferrer" href="https://docs.paperless-ngx.com" ngbPopover="Documentation"
                 i18n-ngbPopover [disablePopover]="!slimSidebarEnabled" placement="end" container="body"
                 triggers="mouseenter:mouseleave" popoverClass="popover-slim">
                 <i-bs class="d-flex" name="question-circle"></i-bs><span class="ms-1">&nbsp;<ng-container i18n>Documentation</ng-container></span>
-              </a>
+              </a> -->
             </li>
             <li class="nav-item" [class.visually-hidden]="slimSidebarEnabled">
               <div class="px-3 py-0 text-muted small d-flex align-items-center flex-wrap">
                 <div class="me-3">
-                  <a class="text-muted text-decoration-none" target="_blank" rel="noopener noreferrer"
-                    href="https://github.com/paperless-ngx/paperless-ngx" ngbPopover="GitHub" i18n-ngbPopover
+                  <a class="text-muted text-decoration-none" target="" rel="noopener noreferrer"
+                    href="#" ngbPopover="" i18n-ngbPopover
                     [disablePopover]="!slimSidebarEnabled" placement="end" container="body"
                     triggers="mouseenter:mouseleave" popoverClass="popover-slim">
                     {{ versionString }}
